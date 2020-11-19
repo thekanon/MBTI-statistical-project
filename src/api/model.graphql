@@ -1,0 +1,41 @@
+type User {
+  id: ID! 
+  username: String! 
+	email: String!
+	votes: [Vote]
+}
+
+type Vote {
+	id: ID!
+	title : String!
+	description : String!
+  upperVote:[Vote!]! 
+  lowerVote:[Vote!]! 
+	val1: String
+	val2: String
+	val3: String
+	val4: String
+	val5: String
+	val6: String
+	val7: String
+	val8: String
+	val9: String
+	val10: String
+	val11: String
+	val12: String
+	val13: String
+	val14: String
+	val15: String
+	val16: String
+	val17: String
+	val18: String
+	val19: String
+	val20: String
+}
+
+type UserVote {
+	id: ID!
+	user:User!
+	vote: Vote!
+	voteSelect: String!
+}
